@@ -9,6 +9,13 @@ let temperature = document.querySelector(".weather__temperature>.value");
 let forecastBlock = document.querySelector(".weather__forecast");
 let suggestions = document.querySelector("#suggestions");
 let weatherAPIKey = "7c861befb1e48ef11455dfe730fd7d14";
+let weatherBaseEndpoint =
+  "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" +
+  weatherAPIKey;
+let forecastBaseEndpoint =
+  "https://api.openweathermap.org/data/2.5/forecast?units=metric&appid=" +
+  weatherAPIKey;
+let cityBaseEndpoint = "https://api.teleport.org/api/cities/?search=";
 
 let weatherImages = [
   {
